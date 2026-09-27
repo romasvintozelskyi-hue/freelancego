@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FreelanceGO — Послуги фрилансера</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #151b2b;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      color: #5ee1a2;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: #151b2b;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #5ee1a2;
+      color: #111;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 32px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #15945c;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .contact {
+      text-align: center;
+      background: white;
+    }
+
+    footer {
+      background: #151b2b;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>FreelanceGO</h2>
+
+  <nav>
+    <a href="#services">Послуги</a>
+    <a href="#about">Про мене</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+</header>
+
+
+<main>
+
+  <section class="hero">
+    <h1>Ваші ідеї — мої тексти</h1>
+
+    <p>
+      Створюю оповідання, сценарії та тексти на замовлення.
+      Допоможу перетворити вашу ідею на готову історію.
+    </p>
+
+    <a class="button" href="#contact">
+      Замовити роботу
+    </a>
+  </section>
+
+
+  <section id="services">
+
+    <h2>Мої послуги</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>📖 Оповідання</h3>
+
+        <p>
+          Напишу оригінальне коротке оповідання за вашою темою.
+        </p>
+
+        <div class="price">
+          від 50 zł
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h3>🎬 Сценарії</h3>
+
+        <p>
+          Сценарії для TikTok, YouTube Shorts та інших відео.
+        </p>
+
+        <div class="price">
+          від 40 zł
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h3>✍️ Тексти</h3>
+
+        <p>
+          Тексти для сайтів, соціальних мереж та оголошень.
+        </p>
+
+        <div class="price">
+          від 30 zł
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="about">
+
+    <h2>Про мене</h2>
+
+    <p style="max-width:700px; margin:auto; text-align:center;">
+      Я займаюся створенням текстів, історій та сценаріїв.
+      Моє завдання — зробити якісний текст відповідно до
+      ідеї та побажань клієнта.
+    </p>
+
+  </section>
+
+
+  <section id="contact" class="contact">
+
+    <h2>Замовити роботу</h2>
+
+    <p style="margin-bottom:25px;">
+      Напишіть мені та розкажіть, який текст вам потрібен.
+    </p>
+
+    <!-- ЗАМІНИ адресу на свою -->
+    <a
+      class="button"
+      href="mailto:your@email.com">
+      Написати мені
+    </a>
+
+  </section>
+
+</main>
+
+
+<footer>
+  © 2026 FreelanceGO
+</footer>
+
+</body>
+</html>
